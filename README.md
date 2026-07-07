@@ -1,10 +1,21 @@
-# Aloe LSF 360 — V7 Estrutura 3D
+# Aloe LSF 360 — Base Técnica V1
 
-Esta versão introduz o modelo estrutural 3D orientado a LSF:
-- paredes arquitetónicas em 2D;
-- Empurrar/Puxar para ativar a visualização de altura/volume em 3D;
-- geração de guias U inferiores/superiores e montantes C a 600 mm;
-- layers para guias, montantes, placas e etiquetas;
-- órbita por arrasto, zoom pela roda do rato, cenas e exportação CSV/DXF.
+Reinício técnico independente das versões anteriores.
 
-Limites desta fase: é um visualizador/modelador simplificado em canvas. Não substitui cálculo estrutural nem produção CNC. Reforços de vãos, vergas, perfis específicos e corte CNC serão a próxima camada do motor LSF.
+## Inclui
+- Desenho 2D: linha, retângulo, círculo, arco, polígono e laço.
+- Figuras fixas e guardadas em lista de objetos.
+- Seleção individual pelo canvas e pelo painel direito.
+- Vista 3D com Three.js, órbita 360°, zoom e pan.
+- Empurrar/Puxar para retângulos, círculos e polígonos fechados.
+- Mover, rodar e apagar como ferramentas separadas.
+- Geração inicial de guias U e montantes C como perfis individuais selecionáveis.
+- Seleção por tipo e por perfil.
+- Gerar CSV de fabrico.
+
+## Teste
+1. Abra o `index.html` com ligação à internet (o motor Three.js é carregado da CDN).
+2. O programa abre com um retângulo de demonstração.
+3. Selecione o retângulo, escolha `Empurrar/Puxar`, indique 2,70 m e confirme.
+4. Clique em `Gerar LSF`.
+5. No painel `Seleção`, selecione individualmente um montante ou guia e teste mover/apagar.
