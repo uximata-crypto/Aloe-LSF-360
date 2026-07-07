@@ -1,21 +1,12 @@
-# Aloe LSF 360 — Base Técnica V1
+# Aloe LSF 360 — Base Técnica V1.1 SVG
 
-Reinício técnico independente das versões anteriores.
+## Correção desta versão
+A área de desenho foi substituída por SVG. Cada retângulo, círculo, polígono, arco, linha e perfil LSF é agora um elemento gráfico real e fica visível no instante em que é criado. Já não depende do canvas que registava objetos mas podia não os desenhar.
 
-## Inclui
-- Desenho 2D: linha, retângulo, círculo, arco, polígono e laço.
-- Figuras fixas e guardadas em lista de objetos.
-- Seleção individual pelo canvas e pelo painel direito.
-- Vista 3D com Three.js, órbita 360°, zoom e pan.
-- Empurrar/Puxar para retângulos, círculos e polígonos fechados.
-- Mover, rodar e apagar como ferramentas separadas.
-- Geração inicial de guias U e montantes C como perfis individuais selecionáveis.
-- Seleção por tipo e por perfil.
-- Gerar CSV de fabrico.
-
-## Teste
-1. Abra o `index.html` com ligação à internet (o motor Three.js é carregado da CDN).
-2. O programa abre com um retângulo de demonstração.
-3. Selecione o retângulo, escolha `Empurrar/Puxar`, indique 2,70 m e confirme.
-4. Clique em `Gerar LSF`.
-5. No painel `Seleção`, selecione individualmente um montante ou guia e teste mover/apagar.
+## Teste imediato
+1. Abra `index.html`.
+2. Surge logo um **Retângulo 1** visível e selecionado no centro do plano.
+3. Escolha Retângulo e arraste no plano: ao largar fica fixo.
+4. Clique em Selecionar e numa figura, ou use o botão `Selecionar` do painel direito.
+5. Use Empurrar/Puxar, depois 3D e Gerar LSF.
+6. Gerar CSV descarrega a lista de cortes.
